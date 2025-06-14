@@ -1,0 +1,56 @@
+{
+  "name": "art-academy-website",
+  "private": false,
+  "version": "1.0.0",
+  "description": "🎨 موقع أكاديمية ميمو للرسم - Art Academy Website with React, TypeScript, and Tailwind CSS",
+  "type": "module",
+  "author": "rahorop820",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rahorop820/art-academy-website.git"
+  },
+  "homepage": "https://github.com/rahorop820/art-academy-website#readme",
+  "keywords": [
+    "react",
+    "typescript",
+    "tailwindcss",
+    "framer-motion",
+    "art-academy",
+    "education",
+    "arabic",
+    "responsive"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.50.0",
+    "firebase": "^11.1.0",
+    "framer-motion": "^12.17.3",
+    "lucide-react": "^0.514.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.57.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@tailwindcss/postcss": "^4.1.10",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "postcss": "^8.5.5",
+    "tailwindcss": "^4.1.10",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.30.1",
+    "vite": "^6.3.5"
+  }
+}
