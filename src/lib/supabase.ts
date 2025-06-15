@@ -1,9 +1,9 @@
 import { createClient } from '@supabase/supabase-js';
 import type { GalleryItem, Course, Instructor, DrawingTechnique } from '../types/database';
 
-// إعدادات Supabase
-const supabaseUrl = 'https://fgekgmbiirrlkmbjahba.supabase.co';
-const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZnZWtnbWJpaXJybGttYmphaGJhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk4NTI5OTEsImV4cCI6MjA2NTQyODk5MX0.dGnMMApjAGuavvkZiIIMlgZnIHk7xGq_h17O_4oPfj4';
+// إعدادات Supabase - استخدام متغيرات البيئة
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://kzixgswpocyykczxwrli.supabase.co';
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt6aXhnc3dwb2N5eWtjenh3cmxpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAwMjUwNTgsImV4cCI6MjA2NTYwMTA1OH0.3pmP_NEB0RRfYQti3rIg9JST4XWXpl9OOihhZqgOWlY';
 
 // إنشاء عميل Supabase
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
